@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Created by mayan on 9/9/17.
  */
-public class UserManager implements UserAccount{
+public class UserManager implements UserAccount,Payments{
     Map<Integer,User> userMap = new HashMap<>();
     @Override
     public void registerNewUser() {
@@ -20,6 +20,11 @@ public class UserManager implements UserAccount{
 
     @Override
     public void removeUser(User user) {
+
+    }
+
+    @Override
+    public void purchace(Book book) {
 
     }
 }
