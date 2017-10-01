@@ -1,3 +1,5 @@
+package roughWork;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +28,7 @@ public class Supplier {
     @Override
     public String toString()
     {
-        return "Supplier{" +
+        return "roughWork.Supplier{" +
                 "name='" + name + '\'' +
                 ", products=" + products +
                 '}';

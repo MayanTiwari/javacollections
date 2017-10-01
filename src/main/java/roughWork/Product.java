@@ -1,3 +1,5 @@
+package roughWork;
+
 import java.util.Comparator;
 import java.util.Objects;
 
@@ -10,8 +12,9 @@ public class Product {
 
     public String name;
     public int weight;
+    public int id;
 
-   // public static final Comparator<Product> BY_Weight = comparing(Product::getWeight);
+   // public static final Comparator<roughWork.Product> BY_Weight = comparing(roughWork.Product::getWeight);
     public static final Comparator<Product> BY_Weight = new Comparator<Product>() {
        @Override
        public int compare(Product product, Product t1) {
@@ -44,10 +47,7 @@ public class Product {
 
     @Override
     public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", weight=" + weight +
-                '}';
+        return name;
     }
 
     @Override

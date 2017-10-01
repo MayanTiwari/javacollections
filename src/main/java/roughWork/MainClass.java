@@ -1,3 +1,5 @@
+package roughWork;
+
 import java.util.*;
 
 /**
@@ -15,12 +17,12 @@ public class MainClass {
         products.add(floorPanel);
         products.add(window);
        // System.out.println(products);
-     /*   Iterator<Product> productIterator = products.iterator();
+     /*   Iterator<roughWork.Product> productIterator = products.iterator();
         while(productIterator.hasNext()){
-            Product product  = productIterator.next();
+            roughWork.Product product  = productIterator.next();
             System.out.println(product);
         }
-        for (Product p : products){
+        for (roughWork.Product p : products){
 
             System.out.println(p);
         }*/
@@ -35,7 +37,7 @@ public class MainClass {
                 productIterator.remove();
             }
         }
-        //Collections.sort(products,new ProductComparator());
+        //Collections.sort(products,new roughWork.ProductComparator());
         List<Product> proList = new ArrayList<>();
         //Java 8 method to use comparator.
         proList.sort(Product.BY_Weight);
